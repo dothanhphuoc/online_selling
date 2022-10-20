@@ -1,0 +1,255 @@
+* {
+    font-family: 'Poppins', sans-serif;;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 46px;
+    background-color: #FF7F50;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.subnav {
+    position: absolute;
+    width: 220px;
+    background-color: #fff;
+    top: 40px;
+    border-radius: 5px;
+    border: 2px solid #f3a487;
+    display: none;
+    transition: 10s;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.subnav::before {
+    position: relative;
+    content: "";
+    width: 220px;
+    height: 10px;
+    background-color: transparent;
+    top: -10px;
+    display: block;
+}
+
+.subnav li {
+    margin: 4px 0;
+    border-bottom: 2px dotted #f3a487;
+    padding-left: 10px;
+}
+
+.subnav li:last-child {
+    border-bottom: none;
+}
+
+.subnav li a {
+    font-size: 16px;
+    color: #FF7F50;
+    text-transform: none;
+}
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language li {
+    list-style: none;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav li a:hover{
+    color: rgb(116, 113, 113);
+}
+
+.subnav li a:hover{
+    color: rgb(116, 113, 113);
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.slider .slider-img {
+    width: 70%;
+}
+
+.slider-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-info {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    width: 270px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #f3a487;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.info .logo {
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+}
+
+.info .info-text p {
+    font-size: 14px;
+    color: #FF7F50;
+    line-height: 20px;
+}
+
+.info .logo i {
+    z-index: 200;
+}
+
+.info .logo i::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(90deg, rgba(252,176,69,1) 29%, rgba(253,232,29,1) 69%);
+    top: -7px;
+    right: -9px;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 10px 11px -2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-column {
+    width: 270px;
+    border: 2px solid #f3a487;
+    border-radius: 5px;
+}
+
+.nav-column li {
+    list-style: none;
+    margin: 5px 5px;
+    border-bottom: 2px dotted #f3a487;
+    padding-left: 10px;
+}
+
+.nav-column li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #FF7F50;
+}
+
+.nav-column li a i {
+    margin-right: 5px;
+    color: #FF7F50;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 100%;
+
+}
+
+.product {
+    width: 230px;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #FF7F50;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.product .title {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(29, 26, 26);
+}
+
+.product img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.price_inter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_inter .price p {
+    font-size: 18px;
+    color: #525252;
+    position: relative;
+}
+
+.price p span {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px #ff0000;;
+}
+
+
+.inter ul li{
+    list-style: none;
+}
+
+.inter ul li i {
+    color: rgb(71, 59, 238);
+    position: relative;
+    bottom: 12px;
+}
+
