@@ -35,7 +35,7 @@
     text-decoration: none;
     color: #fff;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .subnav {
@@ -72,7 +72,7 @@
 }
 
 .subnav li a {
-    font-size: 16px;
+    font-size: 14px;
     color: #FF7F50;
     text-transform: none;
 }
@@ -87,7 +87,7 @@
     list-style: none;
     margin: 0 15px;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .nav li a:hover{
@@ -253,3 +253,6 @@
     bottom: 12px;
 }
 
+@keyframes scale {
+    
+}
